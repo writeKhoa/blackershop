@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- link favicon -->
+  <link rel="shortcut icon" href="./asset/img/blacker.ico" type="image/x-icon">
+
+  <!-- link icon -->
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+  <!-- link responsive  -->
+  <link rel="stylesheet" href="./asset/css/responsive.css">
+  <!-- link style css -->
+  <link rel="stylesheet" href="./asset/css/index.css">
+
+
+  <!-- title -->
+  <title>Blacker Shop</title>
+</head>
+<body>
+  <!------------------- Header -------------------->
+  <header class="header aln-itm--cen">
+
+    <div class="container">
+
+      <div class="row jus-cnt--spc-btw aln-itm--cen">
+        
+        <div class="col">
+          <div class="header__logo aln-itm--cen">
+            <img src="./asset/img/logo.png" alt="" class="logo__img">
+            <h3 class="logo__name">Blacker</h3>
+          </div>
+        </div>
+        
+        <div class="col">
+          <div class="header__nav">
+            
+            <div class="nav--lg-dv">
+              <ul class="nav__list">
+                <li class="nav__item"><a href="#product" class="item__link">Sản phẩm</a></li>
+                <li class="nav__item"><a href="#notify" class="item__link">Thông báo</a></li>
+                <li class="nav__item"><a href="#account" class="item__link">Account</a></li>
+                
+                <li class="nav__close btn-mod">
+                  <i class="fas fa-times"></i>
+                </li>
+              </ul>
+            </div>
+            
+            <div class="nav__mod jus-cnt--spc-btw">
+              <div class="nav__cart btn-mod">
+                <a href="#" class="cart__link">
+                  <i class="fas fa-shopping-cart"></i>
+                </a>
+              </div>
+              
+              <div class="nav--sm-dv btn-mod">
+                <i class="fas fa-bars"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row aln-itm--cen jus-cnt--cen">
+        
+        <div class="col-xm-9 col-sm-9 col-md-9 col-lg-9 col-xl-9">
+
+          <div class="nav__search">
+            <input type="text" name="search" id="nav__search" 
+            placeholder="Nhập sản phẩm cần tìm" class="search__input">
+            
+            <button type="submit" class="search__icon">
+              <i class="fas fa-search"></i>
+            </button>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!------------------- Hero --------------------->
+  <div class="hero">
+    <div class="container">
+      <div class="row jus-cnt--cen">
+        <div class="col col-xm-12 col-sm-12 col-md-8 col-lg-6 col-xl-6">
+          
+          <div class="hero__slide">
+
+            <div class="slide__img active__img">
+              <img src="./asset/img/img__slide_1.png" alt="" class="img--slide active">
+            </div>
+
+            <div class="slide__img">
+              <img src="./asset/img/img__slide_2.png" alt="" class="img--slide">
+            </div>
+            
+            <div class="slide__img">
+              <img src="./asset/img/img__slide_3.png" alt="" class="img--slide">
+            </div>
+
+            <a class="slide__button--pre slider">
+              <i class="fas fa-angle-double-left"></i>
+            </a>
+  
+            <a class="slide__button--next slider">
+              <i class="fas fa-angle-double-right"></i>
+            </a>
+          </div>
+
+            <!-- The dots/circles  -->
+          <div style="text-align:center" class="hero__dot">
+            <span class="dot active__dot" onclick="currentSlide(0)"></span>
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+          </div> 
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-------------------- New product -------------->
+  <div class="new">
+    <div class="container">
+
+      <h3 class="new__title">Sản phẩm mới</h3>
+
+      <div class="row new__frame">
+        
+        <div class="col col-xm-12 col-sm-6 col-md-4 col-lg-2 col-xl-2">
+          <div class="product">
+            <img src="./asset/img/product_1.jpg" class="product__img">
+            
+            <div class="row product__description">
+              <h4 class="product__title">Ao thun xin</h4>
+              <div class="size">
+                <h4 class="size__title">Size:</h4>
+                <div class="size__detail">
+                  <span>L</span>
+                  <span>XL</span>
+                  <span>XXL</span>
+                </div>
+              </div>
+              <a href="#"  class="product__cart btn">Add to cart</a >
+                
+            </div>
+
+          </div>
+        </div>
+        
+        <div class="col col-xm-12 col-sm-6 col-md-4 col-lg-2 col-xl-2">
+          <img src="./asset/img/product_2.jpg" class="product__img">
+          <h5 class="product__title">Vo xin</h5>
+        </div>
+        
+        <div class="col col-xm-12 col-sm-6 col-md-4 col-lg-2 col-xl-2">
+          <img src="./asset/img/product_3.jpg" class="product__img">
+          <h5 class="product__title">Dong ho xin</h5>
+        </div>
+        
+        <div class="col col-xm-12 col-sm-6 col-md-4 col-lg-2 col-xl-2">
+          <img src="./asset/img/product_4.jpg" class="product__img">
+          <h5 class="product__title">Dong ho xin</h5>
+        </div>
+        
+        <div class="col col-xm-12 col-sm-6 col-md-4 col-lg-2 col-xl-2">
+          <img src="./asset/img/product_6.jpg" class="product__img">
+          <h5 class="product__title">Quan the thao xin</h5>
+        </div>
+        
+        <div class="col col-xm-12 col-sm-6 col-md-4 col-lg-2 col-xl-2">
+          <img src="./asset/img/product_7.jpg" class="product__img">
+          <h5 class="product__title">Giay xin</h5>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  
+</body>
+<script src="./asset/js/index.js"></script>
+</html>
