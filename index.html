@@ -21,6 +21,9 @@
   <title>Blacker Shop</title>
 </head>
 <body>
+   <div class="load reloader">
+        <div></div>
+    </div>
   <!------------------- Header -------------------->
   <header class="header aln-itm--cen">
 
@@ -236,6 +239,16 @@
       </div>
     </div>
   </div>
+          
+ <script>
+        
+        window.addEventListener('load', () => {
+            setTimeout(()=> {
+            const e_load = document.querySelector('.load');
+            e_load.classList.remove('reloader');
+            }, 1000);
+        });
+    </script>
   
 </body>
 <script src="./asset/js/index.js"></script>
