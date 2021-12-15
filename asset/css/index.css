@@ -136,6 +136,44 @@ img {
   vertical-align: middle;
 }
 
+
+.reloader {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: black;
+}
+
+.reloader div {
+  width: 50px;
+  height: 50px;
+
+  margin: 0 15px;
+
+  /* border-radius: 50%; */
+
+  background-color: blanchedalmond;
+
+  animation: rot 1s linear infinite;
+}
+
+@keyframes rot {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 /* ------------------- header ----------------------- */
 
 /* mobile first */
